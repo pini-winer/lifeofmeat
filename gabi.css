@@ -1,0 +1,70 @@
+.container{
+  max-width:1060px;
+}
+
+nav{
+  background: #000000;
+}
+
+nav .burger i{
+  font-size: 2.4em;
+  color: rgb(241, 233, 233);
+}
+ .logo{
+  
+  text-align: right;
+}
+
+nav .row{
+  min-height: 100px;
+}
+
+nav a{
+  color:#8e3d28;
+  text-decoration: none;
+  font-size: 1.2em;
+  padding:0 12px;
+  font-weight: bold; 
+  
+}
+
+.strip{
+  min-height: 300px;
+  background-image: url(images/logo12.jfif);
+  background-size: cover;
+  background-position: center;
+  color:rgb(255, 255, 255);
+  font-family: 'Architects Daughter', cursive;
+}
+
+
+
+@media (max-width:768px){
+  nav .nav_bar{
+    position: absolute;
+    left:0;
+    top:100px;
+    background:rgb(255, 251, 251);
+    border:1px solid black;
+    padding:0;
+    width:50%;
+    transform: translate(-100%,0);
+    transform-origin: top ;
+    transition: 1000ms;
+  }
+  .slider{
+    display: none;
+  }
+
+
+  nav .nav_bar_inside{
+    transform: translate(0,0);
+  }
+
+  nav .nav_bar a{
+    display: block;
+    text-align: center;
+    padding:16px 0;
+    border-bottom: 2px solid black;
+  }
+}

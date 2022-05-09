@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.accordion {
+  background-color: rgba(255, 236, 236, 0.24);
+  color: rgb(247, 236, 236);
+  cursor: pointer;
+  padding: 18px;
+  width: 50%;
+  border: rgba(0, 0, 0, 0.329) solid;
+  text-align: center;
+  
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+  margin:0 auto;
+}
+
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: rgba(255, 255, 255, 0);
+  width: 47%;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  margin:0 auto;
+}
+</style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="bootstrap.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link href="lightbox.css" rel="stylesheet" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<title>faq</title>
+
+  <link rel="stylesheet" href="try.css">
+  <script src="bar.js"></script>
+</head>
+
+
+<div class="topnav text-end" id="myTopnav">
+  
+  <a href="index.html">בית</a>
+   <a href="gallery.html">גלריה</a>
+    <a href="about.html">עלינו</a>
+   <a href="faq.html">שאלות ותשובות</a>
+   <a href="connect.html">צור קשר</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+<div class="strip container-fluid d-flex ">
+  <div class=" container life">
+    <h1 class="display-2 ">The life of meat</h1>
+  </div>
+</div>
+</div>
+  
+    <main class="min-vh-100 container-fluid">
+<section class="container  d-grid ">
+        <h2 class="text-center">שאלות עלינו</h2>
+        <p class="text-center" >לעוד שאלות נשמח לשמוע ממכם</p>
+        <br>
+        <br>
+        
+        <button class="accordion "> ?איזה הכשר אתם</button>
+        <div class="panel ">
+          <p > אנחנו עובדים עם ההכשרים המהודרים ביותראבל לא בעלי תעודה כי אנחנו עושים אירועים בחוץ </p>
+        </div>
+        
+        <button class="accordion">?מה בעצם אתם עושים</button>
+        <div class="panel">
+          <p>שף פרטי לאירועים
+            אירועי בוטיק, ערבי בשרים ומסיבות.
+            ערבי גריל מיוחדים, בשרים מהמעשנה.</p>
+        </div>
+        
+        <button class="accordion">?כמה עולה אירוע</button>
+        <div class="panel">
+          <p>תלוי בגופו של עניין בעיקר בסוג האירוע וברמת ההשקעה</p>
+        </div>
+        <button class="accordion">?עם איזה בשרים אתם עובדים</button>
+        <div class="panel">
+          <p>אנטריקוט ,אסאדו, סינטה, פילה, נתח קצבים, כבש, טלה או בקיצור כל חלק איכותי.
+          </p>
+        </div>
+        <button class="accordion">?איך משיגים אתכם</button>
+        <div class="panel">
+          <p>לוחצים למעלה על צור קשר.</p>
+        </div>
+        
+     </section>
+    
+  </main>
+ 
+
+<footer class="container-fluid bg-dark">
+    <div class="container">
+      <div class="row flex-md-row-reverse py-4 justify-content-center justify-content-md-between align-items-center">
+       
+        <p class="text-white-50 text-center my-4 m-md-0">
+          All right reserved © pini winer 2021
+        </p>
+      </div>
+    </div>
+
+    </div>
+  </footer>
+  
+
+  
+  <script src="lightbox-plus-jquery.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+    
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.maxHeight) {
+          panel.style.maxHeight = null;
+        } else {
+          panel.style.maxHeight = panel.scrollHeight + "px";
+        } 
+      });
+    }
+    </script>
+</body>
+</html>
